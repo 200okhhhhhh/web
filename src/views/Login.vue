@@ -33,7 +33,7 @@
                 <v-btn text @click="onReset">{{$t('login.reset')}}</v-btn>
             </v-card-actions>
         </v-card>
-        <div class="mt-8 text-center">Copyright © 2020 Cardinal</div>
+        <div class="mt-8 text-center">Copyright © 2024 Xiliang</div>
 
         <!-- 登录等待 -->
         <v-dialog v-model="isLoading" hide-overlay persistent width="300">
@@ -79,7 +79,7 @@
         created() {
             this.utils.GET('/base').then(res => {
                 this.base = res
-            }).catch(() => this.base.Title = 'Cardinal')
+            }).catch(() => this.base.Title = '200ok')
         },
 
         methods: {
